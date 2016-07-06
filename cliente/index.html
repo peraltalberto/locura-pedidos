@@ -1,0 +1,89 @@
+<html lang="es" ng-app="cashFlow">
+
+<head>
+	<title>Pedidos Lokura</title>
+	<meta charset="utf-8" />
+	<meta lang="es" />
+	<meta name="description" content="Ejemplo Control de Caja en AngularJS por Alberto Basalo" />
+	<meta name="author" content="Alberto Peralta @ Timmp`s apps" />
+	<meta name="application-name" content="ControlAngularJS" />
+	<meta name="Keywords" content="AngularJS, ejemplo, tutorial, curso" />
+	<link rel="author" href="https://plus.google.com/+peraltalberto" />
+	<!-- Bootstrap core CSS 
+	<link href="refs/bootstrap.min.css" rel="stylesheet">-->
+	<link href="../node_modules/angular-material/angular-material.min.css" rel="stylesheet">
+	<link href="./refs/iconfont/material-icons.css" rel="stylesheet">
+	<link href="./refs/mdColorPicker.min.css" rel="stylesheet">
+	<link href="./refs/lokura.css" rel="stylesheet">
+	
+</head>
+
+<body>
+
+  <div layout="column" layout-fill >
+    <ab-menu-navegacion></ab-menu-navegacion>
+<div  layout="row" style="height:100%">
+    
+  <toolbar-left></toolbar-left>
+  
+<main layout="column" flex><div ui-view></div></main>
+</div> 
+
+
+        <ab-firma>
+		<autor>Alberto Peralta</autor>
+		<empresa>
+			<a href="http://dime-que.es">Timmp's app</a>
+		</empresa>
+	</ab-firma>
+      
+  </div>
+	<!--
+	<div layout="column" layout-fill>
+	<ab-menu-navegacion></ab-menu-navegacion>
+
+	
+
+	<ab-firma>
+		<autor>Alberto Basalo</autor>
+		<empresa>
+			<a href="http://agorabinaria.com">Ágora Binaria S.L.</a>
+		</empresa>
+	</ab-firma>
+	</div>
+
+	<!-- JavaScript References -->
+	<script src="./refs/tinycolor.js"></script>
+	<script src="../node_modules/angular/angular.min.js"></script>
+	<script src="./refs/angular-cookies.min.js"></script>
+	<script src="./refs/angular-ui-router.min.js"></script>
+	<script src="./refs/angular-resource.min.js"></script>
+	
+	<script src="../node_modules/angular-animate/angular-animate.min.js"></script>
+	<script src="../node_modules/angular-aria/angular-aria.min.js"></script>
+	<script src="../node_modules/angular-material/angular-material.min.js"></script>
+	<script src="./refs/mdColorPicker.js"></script>
+	<script src="./refs/fabric.min.js"></script>
+	<script src="app.js"></script>
+	<script src="config.js"></script>
+	
+	<script src="./estados/estados.js"></script>
+	<script src="./estados/total/total.js"></script>
+	<script src="./estados/nuevo/nuevo.js"></script>
+	<script src="./estados/lista/lista.js"></script>
+    <!-- Nuevo estado movimiento -->
+    <script src="./estados/nuevo-color/n-color.js"></script>
+	<script src="./estados/registro/registro.js"></script>
+	<script src="./servicios/servicios.js"></script>
+	<script src="./servicios/maestrosService.js"></script>
+	<script src="./servicios/movimientosService.js"></script>
+	<script src="./filtros/filtros.js"></script>
+	<script src="./componentes/componentes.js"></script>
+	<script src="./componentes/menu/menu.js"></script>
+	<script src="./componentes/canvas/canvas.js"></script>
+	<script src="./componentes/toolbar-left/toolbar-left.js"></script>
+	<script src="./componentes/transclusiones.js"></script>
+	<script src="./componentes/valoracion/valoracion.js"></script>
+</body>
+
+</html>

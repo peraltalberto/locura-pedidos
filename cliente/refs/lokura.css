@@ -1,0 +1,32 @@
+main {
+  overflow-y: auto;
+  padding: 25px;
+}
+footer md-toolbar {
+  font-size: 12px;
+  text-align: center;
+}
+md-toolbar {
+    min-height: 40px;
+        height: 40px;
+}
+.titulo-bar{
+  -webkit-app-region: drag;
+  width: 100%
+}
+md-list-item._md-button-wrap>div.md-button:first-child ._md-list-item-inner{
+  height: auto;
+}
+toolbar-left{
+  background-color: #000;
+}
+.tx-area{
+ height: auto; 
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+md-input-container{
+  height: 25px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}

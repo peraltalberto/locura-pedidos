@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <head>
+
+    <!-- Angular Material CSS now available via Google CDN; version 1.0.7 used here -->
+    <link rel="stylesheet" href="node_modules/angular-material/angular-material.css">
+    
+
+  </head>
+  <body>
+
+<div ng-controller="AppCtrl" >
+  <md-toolbar >
+    
+     <div class="md-toolbar-tools">
+     <a href="javascript:setText()"> <h2 class="md-flex">Pedidos LOKURA</h2></a>
+     <input type="text"  onchange="down(this)">
+
+    </div>
+  </md-toolbar>
+ 
+</div>
+
+ <canvas id="canvas" width="600" height="600"></canvas>
+    <!-- Angular Material Dependencies -->
+    <script src="node_modules/angular/angular.min.js"></script>
+    <script src="node_modules/angular-animate/angular-animate.min.js"></script>
+    <script src="node_modules/angular-aria/angular-aria.min.js"></script>
+
+
+    <!-- Angular Material Javascript now available via Google CDN; version 1.0.7 used here -->
+    <script src="node_modules/angular-material/angular-material.min.js"></script>
+
+    <script src="lib/fabric.min.js"></script>
+    
+  <script>
+    // You can also require other files to run in this process
+   // require('./renderer.js')
+ var canvas = new fabric.Canvas('canvas', {
+  'backgroundImage': 'http://ericasadun.com/wp-content/uploads/2013/04/f.png',
+  
+});
+
+ var camiseta    ;   
+      var texto;
+function setText(){
+   fabric.Image.fromURL('https://camisetas.com/img/img-products/big/Roly/CA6424-01.jpg', function(oImg) {
+  // scale image down, and flip it, before adding it onto canvas
+  oImg.scale(0.5);
+  camiseta = oImg;
+  camiseta.on('selected',function(){
+   
+     canvas.sendToBack(camiseta);
+  });
+  canvas.add(camiseta);
+
+});
+  texto = new fabric.IText('Hola Mundo',{
+          top : 200,
+            left : 100,
+            width : 60,
+            height : 70});
+       
+   
+        canvas.add(texto);
+        
+}
+
+function down(text){
+      console.log(texto);
+      texto._set('text',text.value);
+      canvas.calcOffset();
+}
+  </script>
+</html>

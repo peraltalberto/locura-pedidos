@@ -1,0 +1,2 @@
+{"_id":"colors","data":[]}
+{"_id":"tallas","data":[{"_id":"3","nombre":"4XL","descripcion":"Talla 4 veces grande"},{"_id":"2","nombre":"3XL","descripcion":"Talla 3 veces grande"},{"_id":"1","nombre":"XXL","descripcion":"Talla 2 veces grande"},{"_id":"4","nombre":"XL","descripcion":"Talla muy grande"},{"_id":"5","nombre":"L","descripcion":"Talla grande"},{"_id":"6","nombre":"M","descripcion":"Talla Mediana"}]}

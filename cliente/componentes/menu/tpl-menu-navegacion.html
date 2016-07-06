@@ -1,0 +1,45 @@
+<!--Se elimina la referencia al controlador, y se establece desde la directiva-->
+<md-toolbar class="md-hue-2" flex="none">
+	<div class="md-toolbar-tools">
+		<md-button ng-click="$ctrl.openMenu()" class="md-icon-button" style="-webkit-app-region: no-drag" aria-label="Settings">
+			<md-icon md-font-icon="menu">menu</md-icon>
+		</md-button>
+		
+		<div layout="row" class="titulo-bar" layout-align="center center">
+			<h2 layout="row" layout-align="center center">
+				<span>Pedidos Lokura</span>
+			</h2>
+		</div>
+		<span flex></span>
+		<md-button ng-click="$ctrl.dev()" class="md-icon-button" style="-webkit-app-region: no-drag" aria-label="Settings">
+			<md-icon md-font-icon="exit">developer_board</md-icon>
+		</md-button>
+		<md-button ng-click="$ctrl.reload()" class="md-icon-button" style="-webkit-app-region: no-drag" aria-label="Settings">
+			<md-icon md-font-icon="exit">restore_page</md-icon>
+		</md-button>
+		<md-button ng-click="$ctrl.close()" class="md-icon-button" style="-webkit-app-region: no-drag" aria-label="Settings">
+			<md-icon md-font-icon="exit">exit_to_app</md-icon>
+		</md-button>
+
+	</div>
+</md-toolbar>
+<md-sidenav class="md-sidenav-left md-whiteframe-2dp" md-component-id="right">
+	<md-toolbar class="md-theme-light">
+		<h1 class="md-toolbar-tools">Menu</h1>
+	</md-toolbar>
+	<md-content layout-padding>
+		<md-list>
+			<md-list-item ui-sref="total" ng-class="{ active: $ctrl.isActive('nuevo') }">
+				<p>Inicio</p>
+			</md-list-item>
+
+			<md-list-item ui-sref="nuevo" ng-class="{ active: $ctrl.isActive('nuevo') }">
+				<p> Nuevo Producto</p>
+			</md-list-item>
+			<md-list-item ui-sref="ncolor" ng-class="{ active: $ctrl.isActive('ncolor') }">
+				<p>Coleccion de colores</p>
+			</md-list-item>
+		</md-list>
+
+	</md-content>
+</md-sidenav>
